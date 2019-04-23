@@ -14,6 +14,7 @@ This lab assumes that students:
 ## Instructions
 
 1. In the MongoDB dashboard, create a new user that can read and write to any database.
+
 	> Make a note of the username and password for this account.
 
 2. In the MongoDB dashboard, create another new user that can only read any database.
@@ -30,6 +31,7 @@ This lab assumes that students:
 ```json
 {"song":"Row, Row, Row Your Boat"}
 ```
+
 	> Check that the route adds the data to the correct collection in your database before moving on.
 
 6. Something
