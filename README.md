@@ -32,7 +32,7 @@ This lab assumes that students:
 {"song":"Row, Row, Row Your Boat"}
 ```
 
-Then return a message to the user to let them know the song has been added.
+	Then return a message to the user to let them know the song has been added.
 
 	> Check that the route adds the data to the correct collection in your database before moving on.
 
