@@ -28,13 +28,13 @@ This lab assumes that students:
 
 5. Create a new route for `/add` that uses the `.insert()` method to add the data below to a collection called `songs` in your new database.
 
-```js
+```json
 {"song":"Row, Row, Row Your Boat"}
 ```
 
-	Then return a message to the user to let them know the song has been added.
+Then return a message to the user to let them know the song has been added.
 
-	> Check that the route adds the data to the correct collection in your database before moving on.
+> Check that the route adds the data to the correct collection in your database before moving on.
 
 6. Use the `/add` route to add a new song to the collection, but also include:
 	- the `song` title
