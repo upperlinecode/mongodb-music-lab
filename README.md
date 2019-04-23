@@ -35,9 +35,9 @@ This lab assumes that students:
 	> Check that the route adds the data to the correct collection in your database before moving on.
 
 6. Use the `/add` route to add a new song to the collection, but also include:
-	- the song title
-	- the name of the artist
-	- a description of why you like the song.
+	- the `song` title
+	- the name of the `artist`
+	- a `description` of why you like the song.
 
 7. Use the `/add` route to add 5 more of your favorite songs to the database.
 
@@ -58,7 +58,7 @@ This lab assumes that students:
 
 13. Update the route method to show just the first three songs when ordered alphabetically by artist.
 
-# Advanced
+## Advanced
 
 14. Create a new HTML template that is a form for a user to submit their favorite songs to the list. Make sure there is a way for the user to include the song name, artist, and a description of why they like that song.
 
