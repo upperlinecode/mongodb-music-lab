@@ -26,11 +26,13 @@ This lab assumes that students:
 	- the URI of your MongoDB to connect,
 	- a message for the `index()` route.
 
-5. Create a new route for `/add` that uses the `.insert()` method to add the data below to a collection called `songs` in your new database. Then return a message to the user to let them know the song has been added.
+5. Create a new route for `/add` that uses the `.insert()` method to add the data below to a collection called `songs` in your new database.
 
 ```json
 {"song":"Row, Row, Row Your Boat"}
 ```
+
+Then return a message to the user to let them know the song has been added.
 
 	> Check that the route adds the data to the correct collection in your database before moving on.
 
