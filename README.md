@@ -34,6 +34,19 @@ This lab assumes that students:
 
 	> Check that the route adds the data to the correct collection in your database before moving on.
 
-6. Something
+6. Use the `/add` route to add a new song to the collection, but also include the name of the artist along with the song title.
+
+7. Use the `/add` route to add 5 more of your favorite songs to the database.
+
+8. Use the MongoDB dashboard to delete the "Row, Row, Row Your Boat" document from your collection.
+
+9. Create a new route that shows a list of all songs in your collection.
+
+	> Hint: Break down the steps needed to accomplish this:
+	> - Find all of the entries in a collection
+	> - Pass the result as a variable to an HTML template
+	> - Loop over the variable in the template to build the list
+
+10. 
 
 

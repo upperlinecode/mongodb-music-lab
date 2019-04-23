@@ -22,14 +22,17 @@ def index():
     return "Some text here"
 
 
-# CONNECT TO DB, ADD DATA
+# CONNECT TO MONGODB, ADD DATA
 
-# @app.route('/add')
+@app.route('/add')
 
-# def add():
-#     song = mongo.db.songs
-#     song.insert({'song':'Row, Row, Row Your Boat'})
-#     return 'Added Song!'
+def add():
+    # define a variable for the collection you want to connect to
+
+    # use some method on that variable to add/find/delete data
+
+    # return a message to the user (or pass data to a template)
+    return ''
 
 
 # ADD NEW EVENT VIA FORM
