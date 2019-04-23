@@ -24,12 +24,12 @@ def index():
 
 # CONNECT TO DB, ADD DATA
 
-@app.route('/add')
+# @app.route('/add')
 
-def add():
-    song = mongo.db.songs
-    song.insert({'song':'Row, Row, Row Your Boat'})
-    return 'Added Song!'
+# def add():
+#     song = mongo.db.songs
+#     song.insert({'song':'Row, Row, Row Your Boat'})
+#     return 'Added Song!'
 
 
 # ADD NEW EVENT VIA FORM
