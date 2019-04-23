@@ -34,19 +34,50 @@ This lab assumes that students:
 
 	> Check that the route adds the data to the correct collection in your database before moving on.
 
-6. Use the `/add` route to add a new song to the collection, but also include the name of the artist along with the song title.
+6. Use the `/add` route to add a new song to the collection, but also include:
+	- the song title
+	- the name of the artist
+	- a description of why you like the song.
 
 7. Use the `/add` route to add 5 more of your favorite songs to the database.
 
 8. Use the MongoDB dashboard to delete the "Row, Row, Row Your Boat" document from your collection.
 
-9. Create a new route that shows a list of all songs in your collection.
+9. Create a new route that shows a list of all of the song titles in your collection.
 
 	> Hint: Break down the steps needed to accomplish this:
-	> - Find all of the entries in a collection
-	> - Pass the result as a variable to an HTML template
-	> - Loop over the variable in the template to build the list
+	> 1. Find all of the entries in a collection
+	> 2. Pass the result as a variable to an HTML template
+	> 3. Loop over the variable in the template to build the list
 
-10. 
+10. Update your HTML template to include the name of the artist for each song, too.
 
+11. Update the route method to show the songs in alphabetical order by the name of the song.
 
+12. Update the route method to show the songs in alphabetical order by the name of the artist.
+
+13. Update the route method to show just the first three songs when ordered alphabetically by artist.
+
+# Advanced
+
+14. Create a new HTML template that is a form for a user to submit their favorite songs to the list. Make sure there is a way for the user to include the song name, artist, and a description of why they like that song.
+
+15. Create a new route that has two parts:
+	- a `GET` request that renders the template you made above.
+	- a `POST` request that gets the data from the form, adds it to the database, and then lets the user know the data was properly submitted.
+
+There are several ways to do this so there's no one right answer.
+
+## Double Advanced
+
+16. Create a new HTML template and route that will show all songs matching an artist's name: e.g. `/artist/<name>`.
+
+17. Update the HTML template showing all songs to make each artist's name a hyperlink which shows all songs by that artist.
+
+## Triple Advanced
+
+18. Create a new HTML template and route that will show a song based on the unique identifier, `_id`, that is assigned by MongoDB: e.g. `/song/<_id>`. Each song-specific page should also show the user-submitted description of the song.
+
+	> You may have to search for PyMongo methods to work with the `_id` in MongoDB; it is a new data type called an `ObjectId`.
+
+19. Update the HTML template showing all songs to make each song a hyperlink that shows the song-specific page.
