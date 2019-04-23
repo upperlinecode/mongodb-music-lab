@@ -28,7 +28,7 @@ This lab assumes that students:
 
 5. Create a new route for `/add` that uses the `.insert()` method to add the data below to a collection called `songs` in your new database.
 
-```json
+```js
 {"song":"Row, Row, Row Your Boat"}
 ```
 
