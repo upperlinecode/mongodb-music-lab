@@ -15,7 +15,7 @@ This lab assumes that students:
 
 1. In the MongoDB dashboard, create a new user that can read and write to any database.
 
-> Make a note of the username and password for this account.
+	> Make a note of the username and password for this account.
 
 2. In the MongoDB dashboard, create a new database that will store data about your musical preferences.
 
@@ -23,16 +23,14 @@ This lab assumes that students:
 	- the name of the new database, and
 	- the URI of your MongoDB to connect.
 
-4. Create a new route for `/add` that uses the `.insert()` method to add the following data to a collection called `songs` in your new database:
+4. Create a new route for `/add` that uses the `.insert()` method to add the following data to a collection called `songs` in your new database. Then return a message to the user to let them know the song has been added.
 
 ```json
-{'song':'Row, Row, Row Your Boat'}
+{"song":"Row, Row, Row Your Boat"}
 ```
-
-Return a message to the user to let them know the song has been added.
 
 > Check that the route adds the data to the correct collection in your database before moving on.
 
-5. 
+5. Something
 
 
