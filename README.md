@@ -32,7 +32,7 @@ This lab assumes that students:
 {"song":"Row, Row, Row Your Boat"}
 ```
 
-Check that the route adds the data to the correct collection in your database before moving on.
+- Check that the route adds the data to the correct collection in your database before moving on.
 
 6. Use the `/add` route to add a new song to the collection, but also include:
 	- the `song` title
