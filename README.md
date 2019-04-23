@@ -58,7 +58,7 @@ This lab assumes that students:
 
 ## Advanced
 
-14. Create a new HTML template that is a form for a user to submit their favorite songs to the list. Make sure there is a way for the user to include the song name, artist, and a description of why they like that song.
+14. Create a new HTML template that is a form for a user to submit their favorite songs to the list. Make sure there is a way for the user to include the song title, artist, and a description of why they like that song.
 
 15. Create a new route that has two parts:
 	- a `GET` request that renders the template you made above.
