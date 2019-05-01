@@ -30,7 +30,7 @@ This lab assumes that students:
 
 	`{"song":"Row, Row, Row Your Boat"}`
 
-	> Check that the route adds the data to the correct collection in your database before moving on.
+	> Use the MongoDB dashboard to check that the route adds the data to the correct collection in your database before moving on.
 
 6. Use the `/add` route to add a new song to the collection, but also include:
 	- the `song` title
@@ -56,7 +56,7 @@ This lab assumes that students:
 
 13. Update the route method to show just the first three songs when ordered alphabetically by artist.
 
-## Advanced
+## Stretch
 
 14. Create a new HTML template that is a form for a user to submit their favorite songs to the list. Make sure there is a way for the user to include the song title, artist, and a description of why they like that song.
 
@@ -66,13 +66,13 @@ This lab assumes that students:
 
 There are several ways to do this so there's no one right answer.
 
-## Double Advanced
+## Double Stretch
 
 16. Create a new HTML template and route that will show all songs matching an artist's name: e.g. `/artist/<name>`.
 
 17. Update the HTML template showing all songs to make each artist's name a hyperlink which shows all songs by that artist.
 
-## Triple Advanced
+## Triple Stretch
 
 18. Create a new HTML template and route that will show a song based on the unique identifier, `_id`, that is assigned by MongoDB: e.g. `/song/<_id>`. Each song-specific page should also show the user-submitted description of the song.
 
