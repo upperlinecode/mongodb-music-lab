@@ -1,17 +1,23 @@
-import os
-from app import app
-from flask import render_template, request, redirect
+# ---- YOUR APP STARTS HERE ----
+# -- Import section --
+from flask import Flask
+from flask import render_template
+from flask import request
 from flask_pymongo import PyMongo
 
+
+# -- Initialization section --
+app = Flask(__name__)
+
 # name of database
-app.config['MONGO_DBNAME'] = 'database-name' 
+app.config['MONGO_DBNAME'] = 'database-name'
 
 # URI of database
-app.config['MONGO_URI'] = 'mongo-uri' 
+app.config['MONGO_URI'] = 'mongo-uri'
 
 mongo = PyMongo(app)
 
-
+# -- Routes section --
 # INDEX
 
 @app.route('/')
@@ -50,5 +56,3 @@ def add():
 
 
 # TRIPLE-ADVANCED: SHOW SONG PAGE
-
-
