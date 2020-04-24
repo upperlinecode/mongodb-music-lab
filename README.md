@@ -21,14 +21,14 @@ This lab assumes that students:
 
 3. In the MongoDB dashboard, create a new database that will store data about your musical preferences.
 
-4. Update `routes.py` with:
+4. Update `app.py` with:
 	- the name of the new database,
 	- the URI of your MongoDB to connect,
 	- a message for the `index()` route.
 
 5. Create a new route for `/add` that uses the `.insert()` method to add the data below to a collection called `songs` in your new database. Then return a message to the user to let them know the song has been added.
 
-	`{"song":"Row, Row, Row Your Boat"}`
+	`{"song":"Uptown Funk"}`
 
 	> Use the MongoDB dashboard to check that the route adds the data to the correct collection in your database before moving on.
 
