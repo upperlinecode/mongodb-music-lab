@@ -9,7 +9,8 @@ from flask_pymongo import PyMongo
 # -- Initialization section --
 app = Flask(__name__)
 
-# name of database
+# Name of database - 'database-name' is a placeholder, replace with the actual name of your DB
+# Will create a new database if one by this name doesn't already exist
 app.config['MONGO_DBNAME'] = 'database-name'
 
 # URI of database
