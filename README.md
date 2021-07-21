@@ -17,58 +17,58 @@ This lab assumes that students:
 
 	> Make a note of the username and password for this account.
 
-2. In the MongoDB dashboard, create another new user that can only read any database.
-
-3. In the MongoDB dashboard, create a new database that will store data about your musical preferences.
+2. In the MongoDB dashboard, create a new database that will store data about your musical preferences. Keep in mind that the `app.py` file contains code (on line 13) that will create a new database for you in MongoDB. Here, you can rename your database to whatever you'd like. When you run your Python app MongoDB Atlas will check if this database exists; if not it will create it for you. You are also welcome to create the database from the Atlas GUI, just be sure to update the database name in your `app.py` file. 
 
 :::learn-note
 
-**Note:** The free version on MongoDB limits users to one database. If you have already created your free database, you will need to create a new collection in MongoDB to work through this lab. 
+**Note:** The free version on MongoDB limits users to one cluster. For the purposes of this prework, you will only need one cluster. Within that cluster you can create multiple databases. If you have already created a database for this project, you should create new collections within that database (instead of new database instances) to group like-data together. 
 
 :::
 
 :::teach-note
 
-**Note:** The free version on MongoDB limits users to one database. If students have already created their free database, have them create a new collection in MongoDB to work through the remainder of this lab.
+**Note:** The free version on MongoDB limits users to one cluster. For the purposes of this prework, students will only need one cluster. Within that cluster students can create multiple databases. If they have already created a database for this project, they should create new collections within that database (instead of new database instances) to group like-data together. 
 
 :::
 
-4. Update `app.py` with:
+3. Update `app.py` with:
 	- the name of the new database,
 	- the URI of your MongoDB to connect,
 	- a message for the `index()` route.
 
-5. Create a new route for `/add` that uses the `.insert()` method to add the data below to a collection called `songs` in your new database. Then return a message to the user to let them know the song has been added.
+4. Create a new route for `/add` that uses the `.insert()` method to add the data below to a collection called `songs` in your new database. Then return a message to the user to let them know the song has been added.
 
 	`{"song":"Uptown Funk"}`
 
 	> Use the MongoDB dashboard to check that the route adds the data to the correct collection in your database before moving on.
 
-6. Use the `/add` route to add a new song to the collection, but also include:
+5. Use the `/add` route to add a new song to the collection, but also include:
 	- the `song` title
 	- the name of the `artist`
 	- a `description` of why you like the song.
 
-7. Use the `/add` route to add 5 more of your favorite songs to the database.
+6. Use the `/add` route to add 5 more of your favorite songs to the database.
 
-8. Use the MongoDB dashboard to delete the "Row, Row, Row Your Boat" document from your collection.
+7. Use the MongoDB dashboard to delete the "Row, Row, Row Your Boat" document from your collection.
 
-9. Create a new route that shows a list of all of the song titles in your collection.
+8. Create a new route that shows a list of all of the song titles in your collection.
 
 	> Hint: Break down the steps needed to accomplish this:
 	> 1. Find all of the entries in a collection
 	> 2. Pass the result as a variable to an HTML template
 	> 3. Loop over the variable in the template to build the list
 
-10. Update your HTML template to include the name of the artist for each song, too.
+9. Update your HTML template to include the name of the artist for each song, too.
 
-11. Update the route method to show the songs in alphabetical order by the name of the song.
+10. Update the route method to show the songs in alphabetical order by the name of the song.
 
-12. Update the route method to show the songs in alphabetical order by the name of the artist.
+11. Update the route method to show the songs in alphabetical order by the name of the artist.
 
-13. Update the route method to show just the first three songs when ordered alphabetically by artist.
+12. Update the route method to show just the first three songs when ordered alphabetically by artist.
 
 ## Stretch
+
+13. In the MongoDB dashboard, create another new user that can only read any database. Test this user role to make sure it is unable to perform any write actions to your database.
 
 14. Create a new HTML template that is a form for a user to submit their favorite songs to the list. Make sure there is a way for the user to include the song title, artist, and a description of why they like that song.
 
