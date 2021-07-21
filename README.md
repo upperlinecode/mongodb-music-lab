@@ -21,6 +21,14 @@ This lab assumes that students:
 
 3. In the MongoDB dashboard, create a new database that will store data about your musical preferences.
 
+:::learn-note
+**Note:** The free version on MongoDB limits users to one database. If you have already created your free database, you will need to create a new collection in MongoDB to work through this lab. 
+:::
+
+:::teach-note
+**Note:** The free version on MongoDB limits users to one database. If students have already created their free database, have them create a new collection in MongoDB to work through the remainder of this lab.
+:::
+
 4. Update `app.py` with:
 	- the name of the new database,
 	- the URI of your MongoDB to connect,
